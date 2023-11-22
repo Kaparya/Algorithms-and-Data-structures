@@ -3,7 +3,7 @@
 #include <vector>
 
 std::vector<std::vector<int>> OrdinaryTableGeneration(const int& width) {
-    int height = WIDTH;
+    int height = HEIGHT;
 
     std::vector<std::vector<int>> result(height, std::vector<int>(width));
 
@@ -17,7 +17,7 @@ std::vector<std::vector<int>> OrdinaryTableGeneration(const int& width) {
 }
 
 std::vector<std::vector<int>> HyperbolicTableGeneration(const int& width) {
-    int height = WIDTH;
+    int height = HEIGHT;
 
     std::vector<std::vector<int>> result(height, std::vector<int>(width));
 

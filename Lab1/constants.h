@@ -2,4 +2,4 @@
 
 #include <iostream>
 
-const size_t WIDTH = 16;
+const size_t HEIGHT = 8192;
