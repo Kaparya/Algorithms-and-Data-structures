@@ -1,7 +1,9 @@
+#include "constants.h"
+
 #include <vector>
 
 std::vector<std::vector<int>> OrdinaryTableGeneration(const int& width) {
-    int height = 8192;
+    int height = WIDTH;
 
     std::vector<std::vector<int>> result(height, std::vector<int>(width));
 
@@ -15,7 +17,7 @@ std::vector<std::vector<int>> OrdinaryTableGeneration(const int& width) {
 }
 
 std::vector<std::vector<int>> HyperbolicTableGeneration(const int& width) {
-    int height = 8192;
+    int height = WIDTH;
 
     std::vector<std::vector<int>> result(height, std::vector<int>(width));
 
