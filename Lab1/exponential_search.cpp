@@ -1,11 +1,11 @@
 #include <vector>
 
-bool ExponentialSearch(const std::vector<std::vector<int>>& data, const int& value) {
+bool ExponentialSearch(const std::vector<std::vector<int>> &data, const int &value) {
 
     size_t height = data.size(), width = data[0].size();
     size_t row = 0, column = width - 1;
 
-    while (row < height && column >= 0) {
+    while (row < height) {
         if (data[row][column] == value) {
             return true;
         }
@@ -25,7 +25,8 @@ bool ExponentialSearch(const std::vector<std::vector<int>>& data, const int& val
                 step *= 2;
             }
 
-            size_t left = std::max(current, 0), right = current + step;
+            size_t left = std::max(current, 0), right =
+                    std::min(static_cast<size_t> (current + step), data[row].size() - 1);
 
             while (left < right) {
                 size_t mid = (left + right + 1) / 2;
