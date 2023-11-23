@@ -11,7 +11,7 @@ public:
         log_finish_ = std::chrono::steady_clock::now();
     }
     auto result() {
-        std::chrono::duration<double, std::ratio<1, 1000>> duration = log_finish_ - log_start_;
+        std::chrono::duration<double, std::ratio<1, 1000000>> duration = log_finish_ - log_start_;
         return duration.count();
     }
 
