@@ -11,10 +11,10 @@
 
 void TestLinearTable(const int &starts) {
     Clock clock;
-    int target = 2 * HEIGHT + 1;
+    int target = 2 * WIDTH + 1;
 
     std::vector<std::vector<std::vector<int>>> data;
-    for (int i = 1; i <= HEIGHT; i *= 2) {
+    for (int i = 1; i <= WIDTH; i *= 2) {
         auto table = OrdinaryTableGeneration(i);
         data.push_back(table);
     }
@@ -51,10 +51,10 @@ void TestLinearTable(const int &starts) {
 
 void TestHyperbolicTable(const int &starts) {
     Clock clock;
-    int target = 16 * HEIGHT + 1;
+    int target = 16 * WIDTH + 1;
 
     std::vector<std::vector<std::vector<int>>> data;
-    for (int i = 1; i <= HEIGHT; i *= 2) {
+    for (int i = 1; i <= WIDTH; i *= 2) {
         auto table = HyperbolicTableGeneration(i);
         data.push_back(table);
     }
